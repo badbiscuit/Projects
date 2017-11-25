@@ -82,7 +82,7 @@ subj='Fun stuff this week (TimeOut)'
 date=week
 
 msg='From: %s\nTo: %s\nSubject: %s\nDate: %s\n\n%s'%(fromMy,to,subj,date,message)
-username= str('your_email)
+username= str('your_email')
 password=str('your_password')
 try:
     #server=smtplib.SMTP('smtp.mail.yahoo.com',587)
