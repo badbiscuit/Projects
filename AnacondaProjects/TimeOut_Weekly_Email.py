@@ -56,7 +56,7 @@ for p in tree.find_all('span',{'class':'post_info__date'}):
     date_of_post=p.text
 week=datetime.datetime.now()
 week=week.strftime('%b-%d-%Y %a')
-message = 'Hey Lucas,\n'
+message = 'Hey Your_Name,\n'
 #print "The scraper found %d events today, %s !" % (len(This_Week),week)
 message += "The scraper found %d events today, %s \nTimeOut- %s" % (len(This_Week),week,date_of_post)
 message+= "\n\n I think you might like %d of them!\n\n" % len(My_events)
@@ -82,8 +82,8 @@ subj='Fun stuff this week (TimeOut)'
 date=week
 
 msg='From: %s\nTo: %s\nSubject: %s\nDate: %s\n\n%s'%(fromMy,to,subj,date,message)
-username= str('hugginghelps@yahoo.com')
-password=str('donkeyASS42()gayBOY')
+username= str('your_email)
+password=str('your_password')
 try:
     #server=smtplib.SMTP('smtp.mail.yahoo.com',587)
     server = smtplib.SMTP("smtp.mail.yahoo.com",587 )
